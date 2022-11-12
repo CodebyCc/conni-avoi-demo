@@ -36,7 +36,7 @@
     border-bottom: 0.5px solid #171a20;
   }
   .navy1 {
-    @apply flex text-2xl font-semibold text-[#181b21] mx-[0.8rem] px-[0.8rem] py-[0.4rem] rounded-[0.8rem] bg-transparent hover:bg-[#f00524]  cursor-[pointer] hover:bg-opacity-10 transition-all duration-300;
+    @apply flex text-2xl font-semibold text-[#181b21] mx-[0.8rem] px-[0.8rem] py-[0.4rem] rounded-[0.8rem] bg-transparent cursor-[pointer];
   }
 
   .block {

@@ -1,5 +1,5 @@
 .gridContainer {
-  @apply grid md:grid-cols-2 lg:grid-cols-4   justify-items-center justify-center;
+  @apply grid md:grid-cols-2 lg:grid-cols-4 justify-items-center justify-center;
   gap: 2rem;
   margin-bottom: 10rem;
 }
@@ -11,8 +11,8 @@
 }
 .imgContainer {
   @apply object-cover relative;
-  height: 70vh;
-  width: 60%;
+  height: 50vh;
+  width: 80vw;
   border-radius: 10px;
 }
 
@@ -39,7 +39,7 @@
   border-radius: 2.5rem;
 }
 .sizeContainer {
-  @apply bg-[#171a20] text-center  cursor-pointer text-white text-3xl hover:bg-[yellow] hover:text-[black]   transition-all duration-300;
+  @apply bg-[#171a20] text-center  cursor-pointer text-white text-3xl hover:bg-[yellow] hover:text-[black]  transition-all duration-300;
   border-radius: 5px;
 }
 
@@ -56,6 +56,12 @@
 
 .btnTwo {
   @apply text-2xl text-white bg-[#171a20] font-medium uppercase my-2 py-[0.4rem] px-[2.4rem]  w-[25.5rem] h-16   hover:bg-[yellow]  hover:text-[black]   transition-all duration-300;
-
   border-radius: 10px 40px 0px 20px;
+}
+
+@media screen and (min-width: 780px) {
+  .imgContainer {
+    height: 70vh;
+    width: 60%;
+  }
 }
