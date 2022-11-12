@@ -1,0 +1,57 @@
+.nav {
+  @apply flex items-center sticky justify-between w-full fixed top-0 z-10;
+  background-color: rgb(255, 255, 255);
+  padding: 1.4rem;
+}
+
+.navy {
+  @apply text-2xl  cursor-pointer font-semibold text-[#181b21] mx-[0.8rem] px-[0.8rem] py-[0.4rem] rounded-[0.8rem] bg-transparent hover:bg-[#f00524] hover:bg-opacity-10 transition-all duration-300;
+}
+.pont {
+  @apply cursor-pointer;
+}
+
+.list {
+  @apply flex;
+}
+.collapse {
+  @apply flex;
+}
+
+.navyCollapse {
+  @apply text-2xl  cursor-pointer font-semibold text-[#181b21] mx-[0.8rem] px-[0.8rem] py-[0.4rem] rounded-[0.8rem]  bg-transparent hover:bg-[#f00524] hover:bg-opacity-10 transition-all duration-300;
+}
+.navy1 {
+  @apply hidden;
+}
+@media screen and (max-width: 780px) {
+  .collapse {
+    @apply flex flex-col;
+  }
+
+  .menuListHid {
+    @apply hidden;
+  }
+  .navyCollapse {
+    border-bottom: 0.5px solid #171a20;
+  }
+  .navy1 {
+    @apply flex text-2xl font-semibold text-[#181b21] mx-[0.8rem] px-[0.8rem] py-[0.4rem] rounded-[0.8rem] bg-transparent hover:bg-[#f00524]  cursor-[pointer] hover:bg-opacity-10 transition-all duration-300;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+    position: absolute;
+    padding: 20px;
+    border-radius: 1rem;
+    right: 0;
+    top: 7rem;
+    transform: translateY(20px);
+    transition: transform 0.5s ease-in-out 2s;
+  }
+}

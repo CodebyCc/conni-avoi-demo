@@ -1,0 +1,41 @@
+.section {
+  @apply w-full h-screen relative  overflow-hidden;
+}
+.imgContainer {
+  @apply object-cover relative;
+  height: 60vh;
+}
+
+.productDetails {
+  @apply text-center;
+}
+.productName {
+  @apply text-[2rem] text-[#393c41] font-semibold;
+}
+.tagline {
+  @apply text-[#4c4d51] text-2xl;
+}
+.animate {
+  animation: home-spin infinite 20s linear;
+}
+
+@keyframes home-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.buttons {
+  @apply flex items-center justify-center;
+}
+
+.btnOne {
+  @apply text-2xl text-white bg-[#171a20] font-medium uppercase my-2 py-[0.4rem] px-[2.4rem] rounded-[3.4rem] w-[25.5rem] h-16   hover:bg-[yellow] hover:text-[black] transition-all duration-300;
+}
+
+.downSvg {
+  @apply block w-full h-20 mx-auto absolute top-[75%] animate-bounce;
+}

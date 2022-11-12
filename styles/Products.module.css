@@ -1,0 +1,13 @@
+.imgContainer {
+  @apply object-cover relative cursor-pointer rounded-xl;
+  height: 40rem;
+  width: 32rem;
+  background-color: rgba(250, 245, 245, 0.925);
+}
+.titles {
+  @apply text-[#444] cursor-pointer text-2xl;
+}
+
+.price {
+  @apply text-xl text-[#665] font-semibold;
+}

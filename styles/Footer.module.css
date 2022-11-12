@@ -1,0 +1,19 @@
+.gridContainer {
+  @apply grid grid-cols-2 md:grid-cols-4 justify-items-center;
+}
+.container {
+  @apply text-[#181b21] bg-[black];
+}
+
+.footer {
+  @apply text-2xl font-semibold text-[#fff] transition-all duration-300;
+}
+
+.footerHeading {
+  @apply text-4xl font-semibold;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+.date {
+  @apply text-2xl font-medium uppercase mt-12 m-0 text-[#665] text-center;
+}
